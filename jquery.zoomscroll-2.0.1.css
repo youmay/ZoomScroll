@@ -1,0 +1,47 @@
+/* ZOOMSCROLL     
+-----------------------------------------*/
+#zoomscroll-image-overlay {
+    position: fixed;
+    top: 0px;
+    left:0px;
+    z-index : 11000;
+    width:100%;
+    background-color: #777;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE 5.5+*/
+	-moz-opacity: 0.7; /* Mozilla 1.6 и ниже */
+	-khtml-opacity: 0.7; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 0.7; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9 */
+    cursor : pointer;
+}
+#zoomscroll-image-close {
+    position: fixed;    
+    top: 0px;
+    right: 0px;
+    z-index : 11002;
+    cursor : pointer;
+    background: url('close.png') no-repeat;
+    width: 48px;
+    height: 48px;
+}
+#zoomscroll-image-close:hover {
+    background: url('close.png') no-repeat 0px -48px;
+}
+#zoomscroll-image-view {
+    position: absolute;
+    z-index : 11001;
+    opacity: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#zoomscroll-image-preload {
+	position: absolute;
+	padding: 5px;
+	-moz-border-radius: 3px; /* firefox */
+    -webkit-border-radius: 3px; /* Safari and chrome */
+    -khtml-border-radius: 3px; /* Linux browsers */ 
+    border-radius: 3px; /* CSS3  */
+    background: #fff url('spin.gif') no-repeat 5px 5px;
+    width: 32px;
+    height: 32px;
+}

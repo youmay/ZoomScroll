@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>jQuery plugin &mdash; ZoomScroll. Author &mdash; Kirill Shaparov (http://shaparov.ru)</title>
+
+<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.zoomscroll-2.0.1.min.css" />
+<script type="text/javascript" src="jquery.zoomscroll-2.0.1.min.js"></script>
+
+
+<script>
+$( function (){
+    
+    // подключаем zoomscroll
+    $("a.picture").zoomscroll();
+    
+})
+</script>
+
+<style>
+    body {
+        background: url('background.png');
+    }
+    .text {
+		position: absolute;
+        top: 160px;
+        left: 450px;
+    }
+    .picture {
+        position: absolute;
+        top: 140px;
+        left: 140px;
+    }
+</style>
+
+</head>
+
+<body>
+    <a class="picture" href="1.jpg"><img class="image-wrap" src="1.jpg" height="300" /></a>
+    
+    <div class="text">    
+	    <p>Колесо мыши вверх &mdash; приближает изображение.</p>
+	    <p>Колесо мыши вниз &mdash; отдаляет изображение.</p>
+	    <p>Двойной щелчок мышью &mdash; возвращает изображение в исходное положение.</p>
+	    <p>Захват мышью изображения и перемещение &mdash; двигает картинку.</p>
+    </div>
+</body>
+</html>
