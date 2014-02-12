@@ -1,40 +1,39 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<title>jQuery plugin &mdash; ZoomScroll. Author &mdash; Kirill Shaparov (http://shaparov.ru)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>jQuery plugin &mdash; ZoomScroll. Author &mdash; Kirill Shaparov (http://shaparov.ru)</title>
 
-<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
-<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.zoomscroll-2.0.1.min.css" />
-<script type="text/javascript" src="jquery.zoomscroll-2.0.1.min.js"></script>
+	<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="jquery.mousewheel.js"></script><!---->
+	<script type="text/javascript" src="jquery-ui-1.10.4.custom.min.js"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="jquery.zoomscroll-2.0.1.css" />
+	<script type="text/javascript" src="jquery.zoomscroll-2.0.1.js"></script>
 
 
-<script>
-$( function (){
-    
-    // подключаем zoomscroll
-    $("a.picture").zoomscroll();
-    
-})
-</script>
+	<script>
+		$( function (){
+		    $("a.picture").zoomscroll();
+		})
+	</script>
 
-<style>
-    body {
-        background: url('background.png');
-    }
-    .text {
-		position: absolute;
-        top: 160px;
-        left: 450px;
-    }
-    .picture {
-        position: absolute;
-        top: 140px;
-        left: 140px;
-    }
-</style>
+	<style>
+	    body {
+	        background: url('background.png');
+	    }
+	    .text {
+			position: absolute;
+	        top: 160px;
+	        left: 450px;
+	    }
+	    .picture {
+	        position: absolute;
+	        top: 140px;
+	        left: 140px;
+	    }
+	</style>
 
 </head>
 
@@ -42,10 +41,10 @@ $( function (){
     <a class="picture" href="1.jpg"><img class="image-wrap" src="1.jpg" height="300" /></a>
     
     <div class="text">    
-	    <p>Колесо мыши вверх &mdash; приближает изображение.</p>
-	    <p>Колесо мыши вниз &mdash; отдаляет изображение.</p>
-	    <p>Двойной щелчок мышью &mdash; возвращает изображение в исходное положение.</p>
-	    <p>Захват мышью изображения и перемещение &mdash; двигает картинку.</p>
+	    <p>РљРѕР»РµСЃРѕ РјС‹С€Рё РІРІРµСЂС… &mdash; РїСЂРёР±Р»РёР¶Р°РµС‚ РёР·РѕР±СЂР°Р¶РµРЅРёРµ.</p>
+	    <p>РљРѕР»РµСЃРѕ РјС‹С€Рё РІРЅРёР· &mdash; РѕС‚РґР°Р»СЏРµС‚ РёР·РѕР±СЂР°Р¶РµРЅРёРµ.</p>
+	    <p>Р”РІРѕР№РЅРѕР№ С‰РµР»С‡РѕРє РјС‹С€СЊСЋ &mdash; РІРѕР·РІСЂР°С‰Р°РµС‚ РёР·РѕР±СЂР°Р¶РµРЅРёРµ РІ РёСЃС…РѕРґРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ.</p>
+	    <p>Р—Р°С…РІР°С‚ РјС‹С€СЊСЋ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ Рё РїРµСЂРµРјРµС‰РµРЅРёРµ &mdash; РґРІРёРіР°РµС‚ РєР°СЂС‚РёРЅРєСѓ.</p>
     </div>
 </body>
 </html>
